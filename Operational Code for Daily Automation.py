@@ -24,7 +24,7 @@ else:
 # Start browser
 driver = webdriver.Chrome()
 driver.get("https:")
-#address has been redsacted for security purposes
+#address has been redacted for security purposes
 # Login
 driver.find_element(By.ID, "email").send_keys("insert email address")
 #email address and password have been redacted for security purposes
@@ -93,4 +93,5 @@ if scraped_data:
     print(f" Excel file updated with new rows (top of sheet).")
 else:
     print("No new data scraped.")
+
 
