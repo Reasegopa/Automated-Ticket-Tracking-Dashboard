@@ -23,11 +23,12 @@ else:
 
 # Start browser
 driver = webdriver.Chrome()
-driver.get("https://maxprof.web.za/admin")
-
+driver.get("https:")
+#address has been redsacted for security purposes
 # Login
-driver.find_element(By.ID, "email").send_keys("reabetswe.segopa@maxprof.co.za")
-driver.find_element(By.ID, "password").send_keys("password")
+driver.find_element(By.ID, "email").send_keys("insert email address")
+#email address and password have been redacted for security purposes
+driver.find_element(By.ID, "password").send_keys("insert password")
 driver.find_element(By.XPATH, "//button[text()='Sign In']").click()
 
 # Wait for dashboard to load
@@ -89,6 +90,7 @@ if scraped_data:
 
     # Save with new entries at the top
     combined_df.to_excel(excel_file, index=False)
-    print(f"✅ Excel file updated with new rows (top of sheet).")
+    print(f" Excel file updated with new rows (top of sheet).")
 else:
-    print("⚠️ No new data scraped.")
+    print("No new data scraped.")
+
